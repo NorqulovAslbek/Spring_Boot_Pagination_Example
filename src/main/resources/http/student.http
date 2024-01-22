@@ -1,0 +1,17 @@
+### create Student -> bu studentni qoshish uchun
+POST localhost:8080/student
+Content-Type: application/json
+
+{
+  "name": "Rajab",
+  "surname": "Java",
+  "age": 22
+}
+
+### student paginable - > yani studentni page lab olish.
+GET localhost:8080/student/pagination?page=1 & size=2
+### student paginable - > yani studentni page lab olish.
+GET localhost:8080/student
+
+### student get by age and desc created date sort -> studentni yoshi bo'yicha page lab olishimiz mumkun eng oxirida qoshilgan student 1- chiqadi
+GET localhost:8080/student/paginationByAge?page=1 & size=2 & age=22
